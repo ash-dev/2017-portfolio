@@ -1,0 +1,135 @@
+.gist {
+  margin-top: 10px;
+  .gist-file {
+    border: 0px !important;
+    border-bottom: 0px !important;
+    border-radius: 0px !important;
+  }
+  .blob-code-inner {
+    color: #5d5d5d !important;
+	white-space: -moz-pre-wrap;
+	white-space: -hp-pre-wrap; 
+	white-space: -o-pre-wrap;
+	white-space: -pre-wrap; 
+    white-space: pre-wrap !important;
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	word-break: break-all;
+  }
+  .blob-wrapper,
+  .gist-data {
+    border-radius: 0px !important;
+    border: 0px !Important;
+  }
+  .highlight {
+    background: #111 !important;
+  }
+  .gist-meta {
+    padding: 5px 0px !important;
+    background-color: transparent !important;
+    color: #616161 !important;
+    a {
+      color: #868686 !important;
+    }
+  }
+  .blob-num {
+    display: none !important;
+  }
+  .blob-wrapper {
+    padding: 10px;
+    background: #111;
+  }
+  .blob-wrapper table {
+    width: 100% !important;
+  }
+}
+
+.gist .pl-s,
+.gist .pl-pds,
+.gist .pl-s .pl-pse .pl-s1,
+.gist .pl-sr,
+.gist .pl-sr .pl-cce,
+.gist .pl-sr .pl-sre,
+.gist .pl-sr .pl-sra {
+  color: mix(black, $white, 50%);
+}
+
+.gist .pl-c1,
+.gist .pl-s .pl-v {
+  color: mix(black, $white, 40%) !important;
+}
+
+.gist .pl-ii {
+  color: mix(black, $white, 40%) !important;
+  background-color: #111111 !important;
+}
+
+.gist .pl-ent {
+  color: mix(black, $white, 70%) !important;
+}
+
+.gist .pl-k {
+  color: mix(black, $white, 50%) !important;
+}
+
+.gist .pl-smi,
+.gist .pl-s .pl-s1,
+.pl-s1 {
+  color: mix(black, $white, 30%) !important;
+}
+
+.gist .pl-e,
+.gist .pl-en {
+  color: mix(black, $white, 40%) !important;
+}
+
+.gist .pl-pds {
+  color: mix(black, $white, 50%) !important;
+}
+
+.gist .pl-s {
+  color: mix(black, $white, 50%) !important;
+}
+
+.gist .pl-c,
+.type-scss .pl-c,
+#file-ash-2016-portfolio-cat-html-LC1 {
+  color: $cyan !important;
+}
+
+.type-scss .pl-v,
+.type-scss .pl-smw,
+.type-scss .pl-smi,
+.type-scss .pl-s .pl-s1,
+.type-scss .pl-c1,
+.type-scss .pl-s .pl-v,
+.type-scss .pl-s,
+.type-scss .pl-pds,
+.type-scss .pl-s .pl-pse .pl-s1,
+.type-scss .pl-sr,
+.type-scss .pl-sr .pl-cce,
+.type-scss .pl-sr .pl-sre,
+.type-scss .pl-sr .pl-sra,
+.type-scss .pl-bu,
+.type-scss .pl-k,
+.type-scss .pl-e,
+.type-scss .pl-en,
+.type-css .pl-v,
+.type-css .pl-smw,
+.type-css .pl-smi,
+.type-css .pl-s .pl-s1,
+.type-css .pl-c1,
+.type-css .pl-s .pl-v,
+.type-css .pl-s,
+.type-css .pl-pds,
+.type-css .pl-s .pl-pse .pl-s1,
+.type-css .pl-sr,
+.type-css .pl-sr .pl-cce,
+.type-css .pl-sr .pl-sre,
+.type-css .pl-sr .pl-sra,
+.type-css .pl-bu,
+.type-css .pl-k,
+.type-css .pl-e,
+.type-css .pl-en {
+  color: #5d5d5d !important;
+}

@@ -1,0 +1,32 @@
+@for $width from 0 through 100 {
+  @if $width % 5==0 {
+    .w-#{$width} {
+      width: 1% * $width
+    }
+  }
+}
+
+#main {
+  width: 56%;
+  float: left;
+  text-align: left;
+  h2 {
+    margin: 70px 0 35px 0;
+  }
+  h2:first-child {
+    margin-top: 0px;
+  }
+  p {
+    margin: 0 0 15px 0;
+  }
+  p.loading {
+    margin: 0;
+    padding: 0;
+    color: $cyan;
+    overflow: hidden;
+    height: 20px;
+  }
+  .ti-placeholder {
+    display: none !important;
+  }
+}

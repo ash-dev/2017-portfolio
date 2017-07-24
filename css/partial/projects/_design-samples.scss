@@ -1,0 +1,49 @@
+.grid-item {
+  width: (100% / 3);
+  margin-bottom: 5% !Important;
+  img,
+  p {
+    width: 85%;
+  }
+  p {
+    display: table;
+    font-size: $global-font-size - .35;
+    line-height: $global-line-height;
+	  a { 
+	  	text-decoration: none;
+		color: $cyan;
+	  }
+  }
+  p.six:before {
+    content: "2016";
+    width: 18%;
+    display: table-cell;
+    font-family: $primary-font;
+    color: $cyan;
+    font-size: $global-font-size + .25 !important;
+  }
+  p.seven:before {
+    content: "2017";
+    width: 18%;
+    display: table-cell;
+    font-family: $primary-font;
+    color: $cyan;
+    font-size: $global-font-size + .25 !important;
+  }
+  p.five:before {
+    content: "2015";
+    width: 18%;
+    display: table-cell;
+    font-family: $primary-font;
+    color: $cyan;
+    font-size: $global-font-size + .25 !important;
+  }
+  p.four:before {
+    content: "2014";
+    width: 18%;
+    display: table-cell;
+    font-family: $primary-font;
+    color: $cyan;
+    font-size: $global-font-size + .25 !important;
+  }
+}

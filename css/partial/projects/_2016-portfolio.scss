@@ -1,0 +1,70 @@
+#design-block,#more-block{height:60px}#design-block{background:#3873a9}#more-block{background:#a96e38}[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}.scrollmagic-pin-spacer{width:100%!important}s.zindex,#design-block,#more-block,#footer-block{position:relative;z-index:1}.ease,#color-swatches .radio,#header-block h3 a,#moredesign a,.back a,#footer-block .deets a{-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}.block h2{font-size:2em;margin-bottom:60px;font-weight:700!important}.block ul{list-style:none;margin:0;padding:0;line-height:2.25em;font-size:1em}.block ul span{color:rgba(255,255,255,.3)}.ac-custom{padding:0;margin:0 auto}.ac-custom ul,.ac-custom ol{list-style:none;padding:0;margin:0 auto}.ac-custom li{margin:0 auto;padding:0;position:relative;display:inline}.ac-custom label{display:inline-block;position:relative;font-size:2em;padding:0;vertical-align:top;color:rgba(0,0,0,0.2);cursor:pointer;-webkit-transition:color .3s;transition:color .3s}.ac-custom input[type="checkbox"],.ac-custom input[type="radio"],.ac-custom label::before{width:100%;height:100%;top:0;left:0;margin-top:0;position:absolute;cursor:pointer}.ac-custom input[type="checkbox"],.ac-custom input[type="radio"]{opacity:0;-webkit-appearance:none;display:inline-block;vertical-align:middle;z-index:100}.ac-custom label::before{content:'';-webkit-transition:opacity .3s;transition:opacity .3s}.ac-radio label::before{border-radius:50%}.ac-custom input[type="checkbox"]:checked + label,.ac-custom input[type="radio"]:checked + label{color:#fff}.ac-custom input[type="checkbox"]:checked + label::before,.ac-custom input[type="radio"]:checked + label::before{opacity:.8}.ac-custom svg{position:absolute;width:60px;height:60px;max-width:100%;pointer-events:none;top:auto;margin-top:18%;left:22%}.ac-custom svg path{stroke:#fff;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:1!important}.blue-bg{background-color:#3873a9!important}#color-swatches .radio{display:inline-block;width:60px;height:60px;max-width:8%;max-height:5%;margin-right:0;opacity:.6}#color-swatches input[type=radio]{display:none!important}#color-swatches input[type=radio]:checked + .radio{opacity:1}#design-block.blue,.radio.blue{background-color:#3873a9!important}#design-block.mint,.radio.mint{background-color:#3b947f!important}#design-block.green,.radio.green{background-color:#589447!important}#design-block.yellow,.radio.yellow{background-color:#9e8f20!important}#design-block.orange,.radio.orange{background-color:#ab5b35!important}#design-block.red,.radio.red{background-color:#a93131!important}#design-block.pink,.radio.pink{background-color:#963d6f!important}#design-block.purple,.radio.purple{background-color:#603686!important}#more-block.blue{background-color:#a96e38!important}#more-block.mint{background-color:#943b50!important}#more-block.green{background-color:#834794!important}#more-block.yellow{background-color:#202f9e!important}#more-block.orange{background-color:#3585ab!important}#more-block.red{background-color:#31a9a9!important}#more-block.pink{background-color:#3d9664!important}#more-block.purple{background-color:#5c8636!important}#favorite-color{-webkit-animation:fadeinslide 1s 5s forwards;-moz-animation:fadeinslide 1s 5s forwards;-ms-animation:fadeinslide 1s 5s forwards;-o-animation:fadeinslide 1s 5s forwards;animation:fadeinslide 1s 5s forwards}
+
+svg#webdraw {
+  max-width: 100%;
+  height: auto;
+}
+
+#cat1,
+#cat2 {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+#color-swatches.large .radio {
+  display: inline-block;
+  width: 100px !important;
+  height: 100px !important;
+  max-width: 100px !important;
+  max-height: 100px !important
+}
+
+/* SVG */
+
+path,
+line,
+polygon {
+  opacity: 0;
+}
+
+.active path {
+  @include webdraw(4s);
+}
+
+.active line {
+  @include webdraw(15s);
+}
+
+.active line.shorty {
+  @include webdraw(55s);
+}
+
+.active polygon.ql {
+  @include webdraw(10s);
+}
+
+.active polygon.qls {
+  @include webdraw(20s);
+}
+
+.active polygon.bounds {
+  @include webdraw(2s);
+}
+
+
+/* Keyframes */
+
+@include keyframes(dash) {
+  0% {
+    stroke-dashoffset: 3600;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,93 @@
+#sidebar {
+  width: 34%;
+  float: left;
+  margin-left: 10%;
+  text-align: left;
+  h2 {
+    margin: 70px 0 35px 0;
+	white-space: nowrap;
+  }
+  h2.dev:before {
+    content: "\f121";
+    width: 20px;
+    font-family: FontAwesome;
+    display: inline-block;
+    color: $cyan;
+    padding-right: 20px;
+    vertical-align: bottom;
+    font-size: 20px;
+  }
+  h2.design:before {
+    content: "\f1fc" !important;
+    @extend h2.dev:before
+  }
+  h2.github:before {
+    content: "\f09b" !important;
+    @extend h2.dev:before
+  }
+  h2:first-child {
+    margin-top: 0px;
+  }
+  p {
+    margin: 0 0 15px 0;
+    max-width: 350px;
+    opacity: .5;
+    @include transition(all .3s ease);
+    span {
+      color: $cyan
+    }
+  }
+  p.case-study {
+    opacity: .8;
+    margin-bottom: 0px;
+    font-size: $global-font-size - .125;
+    margin-top: 30px;
+    color: $cyan;
+    @include transition(all .3s ease);
+  }
+  p.grey {
+    margin-bottom: 0px;
+    opacity: .2
+  }
+  .cyan {
+    color: $cyan;
+  }
+  img {
+    opacity: .5;
+    margin: 10px 0 5px 0;
+    max-width: 99%;
+    @include transition(all .3s ease);
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+  }
+  .case-study-wrap:hover {
+    img {
+      opacity: 1;
+      -webkit-backface-visibility: hidden;
+    }
+    p {
+      opacity: 1
+    }
+    p.case-study {
+      opacity: 1;
+    }
+    p.grey {
+      opacity: .2
+    }
+  }
+  .case-study-wrap.archive > p {
+    margin-top: 5px !important;
+  }
+  .case-study-wrap.archive {
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      color: $cyan;
+      opacity: .8;
+      @include transition(all .3s ease);
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
