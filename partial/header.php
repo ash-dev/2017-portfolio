@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley S.</title>
+    <title>Ashley S</title>
     <meta name="description" content="Web Designer/Developer">
     <link rel="shortcut icon" href="<?php echo $ROOT; ?>images/favicon.png" />
     <link rel="stylesheet" href="<?php echo $ROOT; ?>css/normalize.css?v=2871942798">
@@ -15,6 +15,8 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/74cc847491.js"></script>
+    <script src="<?php echo $ROOT; ?>js/okshadow.js"></script>
+    <script src="<?php echo $ROOT; ?>js/scripts.js?v=2871942798"></script>
     
 <!--[if lt IE 9]> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,5 +24,5 @@
 
 </head>
 
-<body>
+<body id="top">
     <div id="container">

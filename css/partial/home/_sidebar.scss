@@ -5,7 +5,7 @@
   text-align: left;
   h2 {
     margin: 70px 0 35px 0;
-	white-space: nowrap;
+    white-space: nowrap;
   }
   h2.dev:before {
     content: "\f121";
@@ -31,14 +31,14 @@
   p {
     margin: 0 0 15px 0;
     max-width: 350px;
-    opacity: .5;
+    opacity: .8;
     @include transition(all .3s ease);
     span {
       color: $cyan
     }
   }
   p.case-study {
-    opacity: .8;
+    opacity: 1;
     margin-bottom: 0px;
     font-size: $global-font-size - .125;
     margin-top: 30px;
@@ -47,13 +47,13 @@
   }
   p.grey {
     margin-bottom: 0px;
-    opacity: .2
+    opacity: .3
   }
   .cyan {
     color: $cyan;
   }
   img {
-    opacity: .5;
+    opacity: .8;
     margin: 10px 0 5px 0;
     max-width: 99%;
     @include transition(all .3s ease);
@@ -62,20 +62,24 @@
   }
   .case-study-wrap:hover {
     img {
-      opacity: 1;
+      opacity: .2;
       -webkit-backface-visibility: hidden;
+      @include transition(all 1.5s ease);
     }
     p {
-      opacity: 1
+      opacity: .5
     }
     p.case-study {
-      opacity: 1;
+      opacity: .8;
     }
     p.grey {
-      opacity: .2
+      opacity: .2;
+    }
+    video {
+      opacity: .1;
     }
   }
-  .case-study-wrap.archive > p {
+  .case-study-wrap.archive>p {
     margin-top: 5px !important;
   }
   .case-study-wrap.archive {
@@ -83,11 +87,29 @@
     a {
       text-decoration: none;
       color: $cyan;
-      opacity: .8;
       @include transition(all .3s ease);
-      &:hover {
-        opacity: 1;
-      }
     }
+  }
+  video {
+    margin: 10px 0 5px 0;
+    opacity: .5;
+    width: 100%;
+    @include transition(all 1s ease);
+  }
+}
+.hover-wrap {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 10px;
+	left: 0px;
+    width: 100%;
+    height: auto !important;
+  }
+}
+.hover svg {
+  opacity: 1;
+  path {
+    @include webdraw(3.5s);
   }
 }

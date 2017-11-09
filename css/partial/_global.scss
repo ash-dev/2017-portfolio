@@ -19,7 +19,7 @@ a {
   @include transition(all .3s ease);
 }
 
-a:hover {
+a:hover { 
   opacity: .5;
 }
 
@@ -54,8 +54,10 @@ p {
 #header {
   text-align: left;
   h1 {
+	display: none;
     text-transform: lowercase;
-    margin-top: 0px;
+    margin: 0px;
+	display: inline-block;
   }
   h2 {
     color: mix(black, $white, 70%);
@@ -63,6 +65,7 @@ p {
     margin: 30px 0 50px 0;
     span {
       color: mix(black, $white, 50%);
+	  cursor: auto;
     }
   }
   p.reachout {
@@ -118,5 +121,31 @@ footer {
       color: $cyan;
       text-decoration: none;
     }
+  }
+}
+
+
+.fixed#a {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 20px;
+  font-size: 80px;
+  a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+}
+.fixed#up {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 20px;
+  font-size: 30px;
+  a {
+    color: #ffffff !important;
+    text-decoration: none !important;
   }
 }

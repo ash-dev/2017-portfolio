@@ -5,7 +5,6 @@
     }
   }
 }
-
 #main {
   width: 56%;
   float: left;
@@ -13,8 +12,8 @@
   h2 {
     margin: 70px 0 35px 0;
   }
-  h2:first-child {
-    margin-top: 0px;
+  #dev-wp {
+    margin-top: 0px !important;
   }
   p {
     margin: 0 0 15px 0;
@@ -29,4 +28,75 @@
   .ti-placeholder {
     display: none !important;
   }
+  .expand-alert {
+    max-width: 300px;
+    float: right;
+    text-align: right;
+    margin-top: -50px;
+    opacity: 0;
+    @include transition(opacity 1.5s ease 1.5s, visibility 0s linear 5s);
+    p span {
+      color: $cyan;
+    }
+  }
+  .expand-alert.is-visible {
+    opacity: 1;
+  }
+  .expand-alert:after {
+    content: '\f064';
+    font-family: FontAwesome;
+    display: inline-block;
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    transform: rotate(160deg);
+    top: -12px;
+    position: relative;
+    right: -16px;
+    font-size: 22px;
+    opacity: .8;
+  }
+  .skill-toggle {
+    max-height: 50px;
+  }
+  .skill-wrap {
+    position: relative;
+  }
+  .skill-toggle:after {
+    width: 100%;
+    height: 35px;
+    background: -moz-linear-gradient(top, transparent 0%, black 60%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(60%, black));
+    background: -webkit-linear-gradient(top, transparent 0%, black 60%);
+    background: -o-linear-gradient(top, transparent 0%, black 60%);
+    background: -ms-linear-gradient(top, transparent 0%, black 60%);
+    background: linear-gradient(to bottom, transparent 0%, black 60%);
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+  }
+  .more-skill, .less-skill {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    background: #000000;
+    @extend .ease;
+  }
+  p.details {
+    opacity: .4
+  }
+  .more-skill:hover, .less-skill:hover {
+    opacity: .5
+  }
+}
+h1.home-h1 {
+  font-size: 8vw;
+  line-height: 4.3vw;
+  margin-bottom: 10px !important;
+  margin-left: -1vw !important;
+  margin-top: 1vw !important;
 }

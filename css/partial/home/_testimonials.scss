@@ -1,12 +1,8 @@
 #testimonials {
   width: 100%;
-  overflow: hidden;
-  margin: 60px 0 70px 0;
   text-align: left;
-  .testimonials-wrap {
-    height: 120px;
-    overflow: hidden;
-    position: relative
+  .bottom-fade {
+    clear:both;
   }
   a {
     color: $cyan;
@@ -31,21 +27,7 @@
   }
   .line {
     color: #666;
-  }
-  .bottom-fade {
-    width: 100%;
-    position: relative;
-    display: block;
-    padding-top: 150px;
-    top: -150px;
-    margin-bottom: -150px;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 1)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
-  }
+	}
   .name {
     display: block;
     color: $white;
@@ -64,4 +46,32 @@
   .first {
     clear: both;
   }
+}
+
+.collapse-link {
+  position: relative;
+  text-align: left;
+  height: 100px;
+  padding-top: 150px;
+  margin-bottom: -100px;
+  top: -100px;
+}
+.expand-link {
+  @extend .collapse-link;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 1)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+}
+.collapse-link a, .expand-link a {
+  color: $cyan;
+  text-decoration: none;
+}
+.bottom-testimonials {
+  overflow: hidden;
+  color: #666;
+  margin-top: -235px;
+  margin-bottom: 115px;
 }

@@ -47,6 +47,9 @@
   #sidebar {
     margin-left: 0;
     margin-top: 100px;
+	  video, svg { 
+		  display: none !important;
+	  }
   }
   #sidebar p {
     max-width: 100%;
@@ -56,6 +59,13 @@
   }
   #testimonials .testimonial {
     width: 100%;
+  }
+  h2.web-dev {
+    font-size: 4vw !important;
+  }
+  h1.home-h1 {
+    font-size: 11vw !important;
+    line-height: 6vw !important;
   }
 }
 @media all and (max-width:600px) {
